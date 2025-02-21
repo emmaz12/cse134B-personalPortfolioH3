@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #f1f7fe;
+    --primary-color-alt: #d6edff; 
+    --nav-color: rgb(186, 227, 255);
+    --hover-color: rgb(60, 176, 214);
+    
+    /* Fonts with fallback */
+    --font-main: 'Source Sans Pro', Arial, sans-serif;
+    
+    --spacing: 2rem;
+}
+
+body {
+    font-family: var(--font-main, 'Arial');
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to bottom, var(--primary-color, white), var(--primary-color-alt, white)); 
+    color: #333;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: black; 
+    margin-bottom: 10px;
+}
+
+/* Main section layout using flexbox */
+section {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Centering heading inside section */
+h2 {
+    color: #0077cc;
+    font-size: 1.8rem;
+    align-self: flex-start;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* List using flexbox */
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+li {
+    background: #e3f2fd;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    li {
+        font-size: 1rem;
+    }
+}
